@@ -13,7 +13,6 @@ describe 'Cartoon Collections' do
       expect(output).to match(/2.*Grumpy/)
       expect(output).to match(/3.*Bashful/)
     end
-  end
 
   describe '#summon_captain_planet' do
     it 'returns an array with the same number of elements that it was given' do
@@ -34,7 +33,6 @@ describe 'Cartoon Collections' do
       result = summon_captain_planet(veggies)
       ['Carrot!', 'Cucumber!', 'Pepper!'].each { |w| expect(result).to include w }
     end
-  end
 
   describe "#long_planeteer_calls" do
     it "returns true if any calls are longer than 4 characters" do
@@ -46,7 +44,6 @@ describe 'Cartoon Collections' do
     calls_short = ["wind", "fire", "tree", "axe", "code"]
     expect(long_planeteer_calls(calls_short)).to eq(false)
     end
-  end
 
   describe '#find_the_cheese' do
     it 'returns the first element of the array that is cheese' do
@@ -58,5 +55,4 @@ describe 'Cartoon Collections' do
       no_cheese = %w[ham cellphone computer]
       expect(find_the_cheese(no_cheese)).to eq nil
     end
-end
-  end
+
